@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 function Timer() {
   const [elapsedTime, setElapsedTime] = useState(0);
@@ -58,6 +59,9 @@ function Timer() {
         <button onClick={handleStart}>Start</button>
       )}
       <button onClick={handleReset}>Reset</button>
+      <Link href="/stamps">
+        <a>Stamps</a>
+      </Link>
     </div>
   );
 }
